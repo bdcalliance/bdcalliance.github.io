@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
 html,
 body {
     margin: 0;
@@ -23,7 +26,7 @@ div.span {
 }
 
 h1.decorated {
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     font-size: 30px;
     font-style: italic;
     font-weight: 500;
@@ -64,7 +67,7 @@ nav .logo {
 nav .menu {
     margin-left: 50px;
 
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 600;
@@ -81,7 +84,7 @@ nav .menu {
     height: 100%;
 
     /* background image */
-    background-image: url("../assets/images/아만타니_img@3x.png");
+    background-image: url("../assets/images/amantani@3x.png");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -100,7 +103,7 @@ nav .menu {
 }
 
 #home h2 {
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: center;
@@ -124,7 +127,7 @@ nav .menu {
 }
 
 #home .description {
-    font-family: NanumGothic;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 700;
@@ -136,7 +139,7 @@ nav .menu {
 }
 
 #home .description > .eng-font {
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 600;
@@ -183,7 +186,7 @@ nav .menu {
 }
 
 #portfolios .portfolio-title {
-    font-family: NanumGothic;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 700;
@@ -193,7 +196,7 @@ nav .menu {
 }
 
 #portfolios .portfolio-description {
-    font-family: NanumGothic;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -234,7 +237,7 @@ nav .menu {
 }
 
 #people .name {
-    font-family: NanumGothic;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -244,7 +247,7 @@ nav .menu {
 }
 
 #people .name > .eng-font {
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     font-size: 37px;
     font-style: normal;
     font-weight: 600;
@@ -254,7 +257,7 @@ nav .menu {
 }
 
 #people .position {
-    font-family: NanumGothic;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -269,7 +272,7 @@ nav .menu {
     height: 100%;
 
     /* background image */
-    background-image: url("../assets/images/얼라이언스이미지 1@3x.png");
+    background-image: url("../assets/images/alliance@3x.png");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -284,7 +287,7 @@ nav .menu {
 }
 
 #alliance .slogan {
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     font-size: 35px;
     font-style: normal;
     font-weight: 600;
@@ -296,7 +299,7 @@ nav .menu {
 }
 
 #alliance .description {
-    font-family: NanumGothic;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 700;
@@ -308,13 +311,37 @@ nav .menu {
 }
 
 #alliance .description > .eng-font {
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+#alliance .positioner {
+    position: relative;
+    top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#alliance .decorated {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    border-top: 1.2px solid white;
+    border-bottom: 1.2px solid white;
+
+    color: white;
+
+    max-width: 150px;
 }
 
 #alliance .wrapper {
@@ -363,7 +390,7 @@ nav .menu {
 }
 
 #our-view .title {
-    font-family: NanumGothic;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -377,7 +404,7 @@ nav .menu {
 }
 
 #our-view .description {
-    font-family: NanumGothic;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 700;
@@ -389,9 +416,6 @@ nav .menu {
 }
 
 /***** contact *****/
-
-#contact {
-}
 
 #contact h1 {
     margin: 0 auto 80px auto;
@@ -410,7 +434,7 @@ nav .menu {
 }
 
 #contact .title {
-    font-family: NanumGothic;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -420,7 +444,7 @@ nav .menu {
 }
 
 #contact .description {
-    font-family: NanumGothic;
+    font-family: "Nanum Gothic", sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 700;
@@ -444,7 +468,7 @@ nav .menu {
 }
 
 #footer p {
-    font-family: Noto Sans;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 19px;

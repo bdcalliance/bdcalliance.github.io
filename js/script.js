@@ -17,13 +17,13 @@ this.window.addEventListener("scroll", function (e) {
 
     if ((offsetY >= navOffsetHome && offsetY <= navOffsetHome + height) || (offsetY >= navOffsetAlliance && offsetY <= navOffsetAlliance + height)) {
         navbar.style.backgroundColor = "transparent";
-        logo.src = "./assets/images/홈페이지로고_화이트 1@3x.png";
+        logo.src = "./assets/images/logow@3x.png";
         menus.forEach(function (item) {
             item.style.color = "white";
         });
     } else {
         navbar.style.backgroundColor = "white";
-        logo.src = "./assets/images/홈페이지로고_블루 2@3x.png";
+        logo.src = "./assets/images/logob@3x.png";
         menus.forEach(function (item) {
             item.style.color = "black";
         });
