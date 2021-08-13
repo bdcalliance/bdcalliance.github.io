@@ -562,6 +562,10 @@ aside .closebtn:hover {
         background-position-x: -200px;
     }
 
+    #alliance .positioner {
+        top: 50px;
+    }
+
     #alliance .decorated {
         margin: 0 auto 57px auto;
     }
@@ -585,13 +589,13 @@ aside .closebtn:hover {
 
     #alliance .wrapper {
         position: relative;
-        top: 35%;
+        top: 150px;
     }
 
     #alliance img {
         max-width: 80%;
         position: relative;
-        top: 20%;
+        top: 50px;
         left: 10%;
     }
 }
