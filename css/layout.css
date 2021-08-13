@@ -559,7 +559,7 @@ aside .closebtn:hover {
 
 @media screen and (max-width: 800px) {
     #alliance {
-        background-position-x: -330px;
+        background-position-x: -200px;
     }
 
     #alliance .decorated {
@@ -585,13 +585,13 @@ aside .closebtn:hover {
 
     #alliance .wrapper {
         position: relative;
-        top: 30%;
+        top: 35%;
     }
 
     #alliance img {
         max-width: 80%;
         position: relative;
-        top: 15%;
+        top: 20%;
         left: 10%;
     }
 }
