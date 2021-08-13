@@ -177,6 +177,7 @@ nav .menu {
 #portfolios .item > a {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     flex: 1;
 }
