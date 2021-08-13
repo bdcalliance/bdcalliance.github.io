@@ -589,14 +589,14 @@ aside .closebtn:hover {
 
     #alliance .wrapper {
         position: relative;
-        top: 150px;
+        top: 160px;
     }
 
     #alliance img {
-        max-width: 80%;
+        max-width: 90%;
         position: relative;
-        top: 50px;
-        left: 10%;
+        top: 40px;
+        left: 5%;
     }
 }
 
