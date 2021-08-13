@@ -1,0 +1,454 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+div.span {
+    flex: 1;
+}
+
+h1.decorated {
+    font-family: Noto Sans;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    border-top: 1.2px solid black;
+    border-bottom: 1.2px solid black;
+
+    max-width: 200px;
+}
+
+/***** navigation bar *****/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 85px;
+    width: 100%;
+
+    background-color: transparent;
+}
+
+nav > .inner {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav .logo {
+    height: 57px;
+}
+
+nav .menu {
+    margin-left: 50px;
+
+    font-family: Noto Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: white;
+}
+
+/***** home *****/
+
+#home {
+    height: 100%;
+
+    /* background image */
+    background-image: url("../assets/images/아만타니_img@3x.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .filter {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.35);
+
+    padding-top: 304px;
+
+    box-sizing: border-box;
+}
+
+#home h2 {
+    font-family: Noto Sans;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+#home .slogan {
+    font-size: 75px;
+    font-style: italic;
+    line-height: 102px;
+
+    margin: 0 0 0 32px;
+}
+
+#home .company-title {
+    font-size: 45px;
+    font-style: normal;
+    line-height: 61px;
+
+    margin: 0 0 0 20px;
+}
+
+#home .description {
+    font-family: NanumGothic;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    text-align: center;
+
+    color: white;
+}
+
+#home .description > .eng-font {
+    font-family: Noto Sans;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/***** portfolios *****/
+
+#portfolios {
+    padding-top: 190px;
+    padding-bottom: 190px;
+    box-sizing: border-box;
+}
+
+#portfolios h1 {
+    margin: 0 auto 160px auto;
+}
+
+#portfolios .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 100px;
+    gap: 100px;
+    place-items: stretch;
+}
+
+#portfolios .item {
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolios .item > a {
+    display: flex;
+    align-items: center;
+
+    flex: 1;
+}
+
+#portfolios .portfolio-logo {
+    max-width: 100%;
+}
+
+#portfolios .portfolio-title {
+    font-family: NanumGothic;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.04em;
+    text-align: center;
+}
+
+#portfolios .portfolio-description {
+    font-family: NanumGothic;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.04em;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    #portfolios .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(77px, auto);
+        grid-gap: 29px 77px;
+        gap: 29px 77px;
+        place-items: stretch;
+    }
+
+    #portfolios .portfolio-logo {
+        max-width: 77px;
+    }
+}
+
+/***** people *****/
+
+#people {
+    height: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    background-color: #f7f7f7;
+}
+
+#people .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#people .name {
+    font-family: NanumGothic;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+#people .name > .eng-font {
+    font-family: Noto Sans;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+#people .position {
+    font-family: NanumGothic;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+/***** alliance *****/
+
+#alliance {
+    height: 100%;
+
+    /* background image */
+    background-image: url("../assets/images/얼라이언스이미지 1@3x.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#alliance .filter {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#alliance .slogan {
+    font-family: Noto Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+}
+
+#alliance .description {
+    font-family: NanumGothic;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    text-align: left;
+
+    color: white;
+}
+
+#alliance .description > .eng-font {
+    font-family: Noto Sans;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#alliance .wrapper {
+    position: relative;
+    top: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    transform: translate(0, -100%);
+}
+
+#alliance img {
+    position: relative;
+    top: -80px;
+    left: 750px;
+}
+
+/***** our view *****/
+
+#our-view {
+    padding-top: 190px;
+    padding-bottom: 190px;
+    box-sizing: border-box;
+}
+
+#our-view h1 {
+    margin: 0 auto 160px auto;
+}
+
+#our-view .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 130px 100px;
+    gap: 130px 100px;
+    place-items: stretch;
+}
+
+#our-view .item {
+    display: flex;
+    flex-direction: column;
+}
+
+#our-view .item img {
+    max-width: 100%;
+}
+
+#our-view .title {
+    font-family: NanumGothic;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    vertical-align: baseline;
+
+    margin-top: -20px;
+    margin-bottom: 27px;
+}
+
+#our-view .description {
+    font-family: NanumGothic;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: -0.04em;
+    text-align: center;
+
+    margin-top: 0;
+}
+
+/***** contact *****/
+
+#contact {
+}
+
+#contact h1 {
+    margin: 0 auto 80px auto;
+}
+
+#contact img {
+    max-width: 100%;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin: 40px 0 150px 0;
+}
+
+#contact .title {
+    font-family: NanumGothic;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+#contact .description {
+    font-family: NanumGothic;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+/***** footer *****/
+
+#footer {
+    width: 100%;
+    height: 208px;
+
+    background-color: #727272;
+}
+
+#footer .inner {
+    box-sizing: border-box;
+    padding-top: 44px;
+}
+
+#footer p {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 26px;
+
+    color: #ffffff;
+}
