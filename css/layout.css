@@ -423,6 +423,13 @@ aside .closebtn:hover {
     max-width: 100%;
 }
 
+#people .imgframe {
+    background-color: #eee;
+    border: 1px solid #bbb;
+    width: 541px;
+    height: 585px;
+}
+
 @media screen and (max-width: 800px) {
     #people {
         height: auto;
@@ -552,9 +559,11 @@ aside .closebtn:hover {
 }
 
 #alliance img {
+    width: 40%;
+
     position: relative;
-    top: -80px;
-    left: 750px;
+    top: -10%;
+    right: -50%;
 }
 
 @media screen and (max-width: 800px) {
@@ -593,7 +602,7 @@ aside .closebtn:hover {
     }
 
     #alliance img {
-        max-width: 90%;
+        width: 90%;
         position: relative;
         top: 40px;
         left: 5%;
