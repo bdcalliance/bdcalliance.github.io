@@ -38,40 +38,6 @@ this.window.addEventListener("scroll", function (e) {
     }
 });
 
-/* parsing google spreadsheet */
-
-$(document).ready(() => {
-    const sheetKey = "1iQQkxg0kI7SB13eepBWr_HHp4QwD71jG389veJ4pBT8";
-    const sheetID = 1;
-    const url = `https://docs.google.com/spreadsheets/d/${sheetKey}/gviz/tq?`;
-
-    $.ajax({
-        crossOrigin: true,
-        dataType: "json",
-        url,
-        success: function (data) {
-            console.log(data);
-            data.feed.entry.forEach((item) => {
-                "https://drive.google.com/file/d/1XaMB0Y2Pj7RlXT1TuSFnaD8HtCye1S6k/view?usp=sharing";
-                let imgUrl = item.gsx$image.$t;
-                const keyStart = imgUrl.indexOf("file/d/");
-                const keyEnd = imgUrl.indexOf("/view");
-                const imgKey = imgUrl.slice(keyStart + 7, keyEnd);
-
-                const imgUrlPrefix = "http://drive.google.com/uc?export=view&id=";
-                let htmlCode = `<div class="item">
-                <a href="${item.gsx$url.$t}">
-                    <img src="${imgUrlPrefix + imgKey}" alt="${item.gsx$title.$t}" class="portfolio-logo" />
-                </a>
-                <h2 class="portfolio-title">${item.gsx$title.$t}</h2>
-                <p class="portfolio-description">${item.gsx$description.$t}사</p>
-            </div>`;
-                $("#portfolios .container").append(htmlCode);
-            });
-        },
-    });
-});
-
 /* side bar */
 
 function openNav() {
