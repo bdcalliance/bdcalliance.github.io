@@ -43,12 +43,14 @@ this.window.addEventListener("scroll", function (e) {
 $(document).ready(() => {
     const sheetKey = "1iQQkxg0kI7SB13eepBWr_HHp4QwD71jG389veJ4pBT8";
     const sheetID = 1;
-    const url = `https://spreadsheets.google.com/feeds/list/${sheetKey}/${sheetID}/public/values?alt=json`;
+    const url = `https://docs.google.com/spreadsheets/d/${sheetKey}/gviz/tq?`;
+
     $.ajax({
         crossOrigin: true,
         dataType: "json",
         url,
         success: function (data) {
+            console.log(data);
             data.feed.entry.forEach((item) => {
                 "https://drive.google.com/file/d/1XaMB0Y2Pj7RlXT1TuSFnaD8HtCye1S6k/view?usp=sharing";
                 let imgUrl = item.gsx$image.$t;

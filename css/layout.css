@@ -558,12 +558,16 @@ aside .closebtn:hover {
     transform: translate(0, -100%);
 }
 
-#alliance img {
+#alliance .allianceimg {
     width: 40%;
 
     position: relative;
     top: -10%;
     right: -50%;
+}
+
+#alliance .allianceimg > img {
+    width: 100%;
 }
 
 @media screen and (max-width: 800px) {
@@ -601,7 +605,7 @@ aside .closebtn:hover {
         top: 160px;
     }
 
-    #alliance img {
+    #alliance .allianceimg {
         width: 90%;
         position: relative;
         top: 40px;
