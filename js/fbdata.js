@@ -40,6 +40,7 @@ $(document).ready(() => {
 
     // firebase.database().ref("/alliance").set(initialAlliance);
 
+    /* load alliance */
     firebase
         .database()
         .ref("/alliance")
@@ -62,6 +63,30 @@ $(document).ready(() => {
                     
                 </div>`);
                     // <p class="portfolio-description">${alli.Description}사</p>
+                });
+            }
+        });
+
+    /* load people */
+    firebase
+        .database()
+        .ref("/people")
+        .once("value")
+        .then((snapshot) => {
+            if (snapshot.val()) {
+                let people = snapshot.val();
+                people.forEach((person) => {
+                    const imgUrlPrefix = "http://drive.google.com/uc?export=view&id=";
+                    let imgUrl = person.Profile;
+                    const keyStart = imgUrl.indexOf("file/d/");
+                    const keyEnd = imgUrl.indexOf("/view");
+                    const resultingImgUrl = imgUrlPrefix + imgUrl.slice(keyStart + 7, keyEnd);
+
+                    $("#people .container").append(`<div class="item">
+                    <img src="${resultingImgUrl}" alt="${person.Profile}" class="portfolio-logo" />
+                    <h2 class="portfolio-title">${person.Name}</h2>
+                    <p class="portfolio-description">${person.Description}</p>
+                </div>`);
                 });
             }
         });
