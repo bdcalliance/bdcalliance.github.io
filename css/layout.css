@@ -387,6 +387,7 @@ aside .closebtn:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 #people .name {
@@ -468,6 +469,11 @@ aside .closebtn:hover {
 
     #people .person:first-child {
         margin-bottom: 57px;
+    }
+
+    #people .imgframe {
+        margin: 0 auto;
+        max-width: 90%;
     }
 }
 
