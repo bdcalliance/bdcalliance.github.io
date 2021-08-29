@@ -364,6 +364,9 @@ aside .closebtn:hover {
         grid-gap: 77px 29px;
         gap: 77px 29px;
         place-items: stretch;
+
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #portfolios .portfolio-logo {
@@ -392,6 +395,9 @@ aside .closebtn:hover {
     grid-gap: 40px;
     gap: 40px;
     place-items: stretch;
+
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #people .item {
@@ -450,10 +456,23 @@ aside .closebtn:hover {
         grid-gap: 77px 29px;
         gap: 77px 29px;
         place-items: stretch;
+
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     #people .portfolio-logo {
         max-width: 100%;
+    }
+
+    #people .portfolio-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #people .portfolio-description {
+        font-size: 18px;
+        text-align: center;
     }
 }
 
