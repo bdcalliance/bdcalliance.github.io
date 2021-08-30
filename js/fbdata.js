@@ -59,9 +59,8 @@ $(document).ready(() => {
                     <a href="${alli.URL}">
                         <img src="${resultingImgUrl}" alt="${alli.Title}" class="portfolio-logo" />
                     </a>
-                    <h2 class="portfolio-title">${alli.Title}</h2>
-                    
                 </div>`);
+                    // <h2 class="portfolio-title">${alli.Title}</h2>
                     // <p class="portfolio-description">${alli.Description}사</p>
                 });
             }
