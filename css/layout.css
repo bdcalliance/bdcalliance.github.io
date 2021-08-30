@@ -710,8 +710,9 @@ aside .closebtn:hover {
     margin: 0 auto 80px auto;
 }
 
-#contact img {
+#contact #map {
     max-width: 1200px;
+    height: 720px;
     margin: 0 auto;
 }
 

@@ -21,7 +21,7 @@ this.window.addEventListener("scroll", function (e) {
     const navOffsetHome = offsetHome - navbarHeight;
     const navOffsetAlliance = offsetAlliance - navbarHeight;
 
-    if ((offsetY >= navOffsetHome && offsetY <= navOffsetHome + height) || (offsetY >= navOffsetAlliance && offsetY <= navOffsetAlliance + height)) {
+    if ((offsetY >= navOffsetHome && offsetY <= navbarHeight * 2) || (offsetY >= navOffsetAlliance && offsetY <= navOffsetAlliance + height)) {
         navbar.style.backgroundColor = "transparent";
         logo.src = "./assets/images/logow@3x.png";
         menuBtn.src = "./assets/icons/menuw.svg";
