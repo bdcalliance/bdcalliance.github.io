@@ -1,6 +1,9 @@
+let naverPt = new naver.maps.Point(14143403.529477883, 4510332.097012131);
+let latlng = naver.maps.TransCoord.fromNaverToLatLng(naverPt);
+
 var mapOptions = {
-    center: naver.maps.UTMK_NAVERCoord.fromCoordToLatLng(new naver.maps.Point(14143403.529477883, 4510332.097012131)),
-    zoom: 17,
+    center: latlng,
+    zoom: 20,
 };
 
 var map = new naver.maps.Map("map", mapOptions);
