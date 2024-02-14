@@ -49,7 +49,7 @@ $(document).ready(() => {
             if (snapshot.val()) {
                 let alliance = snapshot.val();
                 alliance.forEach((alli) => {
-                    const imgUrlPrefix = "http://drive.google.com/uc?export=view&id=";
+                    const imgUrlPrefix = "https://drive.google.com/uc?export=view&id=";
                     let imgUrl = alli.Logo;
                     const keyStart = imgUrl.indexOf("file/d/");
                     const keyEnd = imgUrl.indexOf("/view");
@@ -75,7 +75,7 @@ $(document).ready(() => {
             if (snapshot.val()) {
                 let people = snapshot.val();
                 people.forEach((person) => {
-                    const imgUrlPrefix = "http://drive.google.com/uc?export=view&id=";
+                    const imgUrlPrefix = "https://drive.google.com/uc?export=view&id=";
                     let imgUrl = person.Profile;
                     const keyStart = imgUrl.indexOf("file/d/");
                     const keyEnd = imgUrl.indexOf("/view");
