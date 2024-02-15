@@ -81,8 +81,10 @@ $(document).ready(() => {
                     const keyEnd = imgUrl.indexOf("/view");
                     const resultingImgUrl = imgUrlPrefix + imgUrl.slice(keyStart + 7, keyEnd);
 
+                    console.log(person, resultingImgUrl)
+
                     $("#people .container").append(`<div class="item">
-                    <img src="${resultingImgUrl}" alt="${person.Profile}" class="portfolio-logo" />
+                    <img src="${resultingImgUrl}" alt="${person.Name}" class="portfolio-logo" />
                     <h2 class="portfolio-title">${person.Name}</h2>
                     <p class="portfolio-description">${person.Description}</p>
                 </div>`);
