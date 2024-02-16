@@ -42,7 +42,11 @@ $(document).ready(() => {
         .then(json => {
             json.forEach(person => {
                 $("#people .container").append(`<div class="item">
-                    <img src="./assets/people/${person.img}" alt="${person.name}" class="portfolio-logo" />
+                    ${
+                        person.img ?
+                        `<img src="./assets/people/${person.img}" alt="${person.name}" class="portfolio-logo" />` :
+                        `<div class="empty-image"></div>`
+                    }
                     <h2 class="portfolio-title">${person.name}</h2>
                     <p class="portfolio-description">${person.position}</p>
                 </div>`);
@@ -59,10 +63,14 @@ $(document).ready(() => {
         .then(response => response.text())
         .then(text => parsePortfolios(text))
         .then(json => {
-            json.forEach(portfoliio => {
+            json.forEach(portfolio => {
                 $("#portfolios .container").append(`<div class="item">
-                    <a href="${portfoliio.url}">
-                        <img src="./assets/portfolios/${portfoliio.img}" alt="${portfoliio.name}" class="portfolio-logo" />
+                    <a href="${portfolio.url}">
+                        ${
+                            portfolio.img ? 
+                            `<img src="./assets/portfolios/${portfolio.img}" alt="${portfolio.name}" class="portfolio-logo" />` : 
+                            `<div class="empty-image"><div class="centered-text">${portfolio.name}</div></div>`
+                        }
                     </a>
                 </div>`);
             })
