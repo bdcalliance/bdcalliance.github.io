@@ -239,7 +239,7 @@ aside .closebtn:hover {
 #home .company-title {
     font-size: 25px; //45
     font-style: normal;
-    margin-bottom: 30px
+    margin-bottom: 30px;
 
 }
 
@@ -250,7 +250,7 @@ aside .closebtn:hover {
     font-weight: 700;
     line-height: 30px;
     letter-spacing: -0.04em;
-    width: 100%
+    width: 100%;
     text-align: right;
     margin: 0 100px 61px 0;
 
@@ -270,7 +270,7 @@ aside .closebtn:hover {
 
 @media screen and (max-width: 800px) {
     #home {
-        /* background-position-x: -200px; */
+        background-position-x: -200px;
     }
 
     #home .filter {
@@ -299,6 +299,8 @@ aside .closebtn:hover {
     }
 
     #home .description {
+        width: 100%;
+        text-align: center;
         font-size: 12px;
         line-height: 19px;
     }
