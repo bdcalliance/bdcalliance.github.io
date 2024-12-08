@@ -288,6 +288,8 @@ aside .closebtn:hover {
         font-size: 35px;
         line-height: 48px;
 
+        text-align: center;
+
     }
 
     #home .company-title {
