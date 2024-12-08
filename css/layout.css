@@ -232,22 +232,21 @@ aside .closebtn:hover {
 
 #home .slogan {
     font-size: 75px;
-    font-style: italic;
-    line-height: 102px;
+    font-style: normal;
+    /* line-height: 102px; */
 
-    margin: 0 0 32px 0;
 }
 
 #home .company-title {
     font-size: 25px; //45
-    font-style: italic;
+    font-style: normal;
 
 }
 
 #home .description {
     font-family: "Nanum Gothic", sans-serif;
     font-size: 19px;
-    font-style: normal;
+    font-style: italic;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: -0.04em;
