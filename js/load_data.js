@@ -2,7 +2,8 @@
 
 // parse *person-formatted* csv into json
 function parsePeople(text) {
-    const lines = text.split('\n');
+    // const lines = text.split('\n');
+    const lines = text.split(/\r?\n/).filter(line => line.trim() !== '');
     const result = [];
     lines.forEach(line => {
         const splited = line.split(",");
