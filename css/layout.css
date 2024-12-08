@@ -277,7 +277,7 @@ aside .closebtn:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         height: auto; 
         min-height: 100vh; /* 모바일 환경에서 최소 높이 100vh */
         padding-top: 10vh; 
@@ -288,7 +288,7 @@ aside .closebtn:hover {
         font-size: 35px;
         line-height: 48px;
 
-        text-align: center;
+        text-align: left;
 
     }
 
