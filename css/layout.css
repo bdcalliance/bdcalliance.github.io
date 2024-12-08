@@ -227,6 +227,7 @@ aside .closebtn:hover {
     letter-spacing: 0em;
     text-align: right;
     color: white;
+    margin: 0 100px 0 0;
 }
 
 #home .slogan {
@@ -242,7 +243,6 @@ aside .closebtn:hover {
     font-style: italic;
     line-height: 30px; //61
 
-    margin: 0 0 20px 0;
 }
 
 #home .description {
