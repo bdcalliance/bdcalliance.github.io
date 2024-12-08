@@ -16,12 +16,18 @@ function parsePeople(text) {
 
 // parse *portfolio-formatted* csv into json
 function parsePortfolios(text) {
-    const lines = text.split('\n');
+    // const lines = text.split('\n');
+    const lines = text.split(/\r?\n/).filter(line => line.trim() !== '');
     const result = [];
     lines.forEach(line => {
-        const splited = line.split(",");
-        const url = splited[splited.length-1].trim()
-        const img = splited[splited.length-2].trim()
+        // const splited = line.split(",");
+        const splited = line.split(/[,;]/);
+        
+        // const url = splited[splited.length-1].trim()
+        // const img = splited[splited.length-2].trim()
+        const url = splited[splited.length - 1] ? splited[splited.length - 1].trim() : '';
+        const img = splited[splited.length - 2] ? splited[splited.length - 2].trim() : '';
+        
         const name = splited.slice(0, splited.length-2).join(",").trim()
         result.push({name, url, img});
     });
