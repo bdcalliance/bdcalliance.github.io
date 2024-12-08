@@ -241,7 +241,6 @@ aside .closebtn:hover {
 #home .company-title {
     font-size: 25px; //45
     font-style: italic;
-    line-height: 30px; //61
 
 }
 
@@ -252,7 +251,9 @@ aside .closebtn:hover {
     font-weight: 700;
     line-height: 30px;
     letter-spacing: -0.04em;
-    text-align: center;
+    text-align: right;
+    margin: 0 100px 0 0;
+
 
     color: white;
 }
