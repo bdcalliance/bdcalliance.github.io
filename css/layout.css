@@ -299,9 +299,9 @@ aside .closebtn:hover {
     }
 
     #home .description {
-        width: 100%;
         font-size: 12px;
         line-height: 19px;
+        text-align: left;
     }
 
     #home .description > .eng-font {
