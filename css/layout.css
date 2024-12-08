@@ -212,6 +212,7 @@ aside .closebtn:hover {
 
 #home .filter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%; 
@@ -272,6 +273,7 @@ aside .closebtn:hover {
 
     #home .filter {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto; 
